@@ -14,7 +14,7 @@ composer require web3p/ethereum-tx
 
 ## Create a transaction
 ```php
-use Web3p\EthereumTx\Transaction;
+use Kaadon\EthereumTx\Transaction;
 
 // without chainId
 $transaction = new Transaction([
@@ -45,7 +45,7 @@ $transaction = new Transaction('0xf86c098504a817c8008252089435353535353535353535
 
 ## Create a EIP1559 transaction
 ```php
-use Web3p\EthereumTx\EIP1559Transaction;
+use Kaadon\EthereumTx\EIP1559Transaction;
 
 // generate transaction instance with transaction parameters
 $transaction = new EIP1559Transaction([
@@ -64,7 +64,7 @@ $transaction = new EIP1559Transaction([
 
 ## Create a EIP2930 transaction:
 ```php
-use Web3p\EthereumTx\EIP2930Transaction;
+use Kaadon\EthereumTx\EIP2930Transaction;
 
 // generate transaction instance with transaction parameters
 $transaction = new EIP2930Transaction([
@@ -81,7 +81,7 @@ $transaction = new EIP2930Transaction([
 
 ## Sign a transaction:
 ```php
-use Web3p\EthereumTx\Transaction;
+use Kaadon\EthereumTx\Transaction;
 
 $signedTransaction = $transaction->sign('your private key');
 ```
